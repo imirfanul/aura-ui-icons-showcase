@@ -1,3 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  html,
+  body {
+    height: 100%;
+  }
+
+  body {
+    @apply bg-bg text-text;
+  }
+}
+
+@layer components {
+  .container-std {
+    @apply max-w-6xl mx-auto px-4 md:px-6;
+  }
+
+  .card {
+    @apply bg-card border border-border rounded-xl p-4;
+  }
+
+  .btn {
+    @apply border border-border rounded-lg px-3 py-2 text-sm hover:border-brand transition;
+  }
+
+  .input {
+    @apply bg-card border border-border rounded-lg px-3 py-2 text-sm outline-none focus:border-brand;
+  }
+
+  .select {
+    @apply bg-card border border-border rounded-lg px-3 py-2 text-sm outline-none focus:border-brand;
+  }
+
+  .tag {
+    @apply text-xs text-text-muted bg-[#0d1a26] border border-[#17314a] px-2 py-0.5 rounded-full;
+  }
+}
+
 @import "tailwindcss";
 
 :root {
