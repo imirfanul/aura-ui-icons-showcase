@@ -1,6 +1,6 @@
-import "./globals.css"
 import type { Metadata } from "next"
 import React from "react"
+import "./globals.css"
 
 export const metadata: Metadata = {
 	title: "Aura UI Icons — Showcase",
@@ -29,7 +29,7 @@ function ThemeShell({ children }: { children: React.ReactNode }) {
 			</header>
 			{children}
 			<footer className="container-std py-8 text-sm text-text-muted">
-				Install: <code>pnpm add @aura-ui/icons</code>
+				Install: <code>pnpm add aura-ui-icons/icons</code>
 			</footer>
 		</div>
 	)

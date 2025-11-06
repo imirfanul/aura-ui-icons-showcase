@@ -1,9 +1,9 @@
 "use client"
 
-import * as React from "react"
-import { SETS, SetKey, IconComp } from "@/lib/iconSets"
-import Toolbar from "@/components/Toolbar"
 import IconCard from "@/components/IconCard"
+import Toolbar from "@/components/Toolbar"
+import { IconComp, SETS, SetKey } from "@/lib/iconSets"
+import * as React from "react"
 
 export default function Page() {
 	const [active, setActive] = React.useState<SetKey>("lucide")
@@ -38,7 +38,9 @@ export default function Page() {
 				<div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
 					<div>
 						<h2 className="text-base font-semibold">Install</h2>
-						<code className="text-sm">pnpm add @aura-ui/icons</code>
+						<code className="text-sm">
+							pnpm add aura-ui-icons/icons
+						</code>
 						<p className="text-xs text-text-muted">
 							Install specific sets for previews (e.g.,{" "}
 							<code>pnpm add lucide-react</code>).
